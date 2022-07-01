@@ -44,39 +44,14 @@ module.exports = Cat;
 
 
 
-
 /*
-function createCat(name, sex, icad, ddn, loof, testg, testm, dvac, dver) {
-    return new Cat({
-        name,
-        sex,
-        icad,
-        ddn,
-        loof,
-        testg,
-        testm,
-        dvac,
-        dver,
-    });
-}
-
-
-function save(...cats) {
-    cats.forEach(async (p) => await p.save());
-}
-
 async function getCat(id) {
     return await Cat.findOne({
         _id: id
     });
 }
 
-async function deleteCat(id) {
-    await Cat.deleteOne({
-        id
-    });
-    console.log('Deleted successfully the cat');
-}
+
 */
 
 

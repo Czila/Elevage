@@ -1,9 +1,12 @@
 const express = require('express');
-const {
-    toNamespacedPath
-} = require('path');
+const {toNamespacedPath} = require('path');
 const router = express.Router()
 const Cat = require('../models/monmodele')
+
+router.get('/', async function (req, res) {
+    const cats = await Cat.find();
+    res.send(cats);
+});
 
 
 
