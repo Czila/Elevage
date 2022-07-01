@@ -1,10 +1,18 @@
-const express = require('express');
-const cats = require('./routes/cats.js');
-const app = express();
-app.use(express.json()); 
+import logo from './logo.svg';
+import './App.css';
+import Homepage from './pages/homepage';
 
-app.use('/cats', cats); 
-app.get('/messages', (req, res) => {
-  res.send('this is all of your messages');
-});
-app.listen(3000, () => console.log('Server listenning on port 3000'));
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+
+        <p>
+          < Homepage/>
+        </p>
+      </header>
+    </div>
+  );
+}
+
+export default App;
