@@ -3,11 +3,12 @@
 import Navbar from "../components/navbar"
 
 
-function Homepage(){
+function Homepagepage(){
     return (
         <>
             <Navbar />
+            
         </>
     )
 };
-export default Homepage;
+export default Homepagepage;

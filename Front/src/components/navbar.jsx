@@ -1,58 +1,59 @@
 
 import React from 'react';
 import 'bulma/css/bulma.min.css';
+import { Link } from 'react-router-dom';
 
 
 function Navbar (){
     return(
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
+<nav className="navbar" role="navigation" aria-label="main navigation">
+  <div className="navbar-brand">
 
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+    <Link role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
-    </a>
+    </Link>
   </div>
 
   <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item">
+    <div className="navbar-start">
+      <Link to='/homepage' className="navbar-item" >
         Accueil
-      </a>
+      </Link>
 
-      <a class="navbar-item">
+      <Link to='/monelevage' className="navbar-item">
         Mon élevage
-      </a>
+      </Link>
 
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
+      <div className="navbar-item has-dropdown is-hoverable">
+        <Link to='/meschats' className="navbar-link">
           Mes chats
-        </a>
+        </Link>
 
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
+        <div className="navbar-dropdown">
+          <Link to='/listcats' className="navbar-item">
             Liste de mes chats
-          </a>
-          <a class="navbar-item">
+          </Link>
+          <Link to='/newcat' className="navbar-item">
             Ajouter un chat
-          </a>
-          <a class="navbar-item">
+          </Link>
+          <Link to='/deletecat' className="navbar-item">
             Supprimer un chat
-          </a>
+          </Link>
         </div>
       </div>
     </div>
 
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
+    <div className="navbar-end">
+      <div className="navbar-item">
+        <div className="buttons">
+          <Link className="button is-primary">
             <strong>Inscrivez vous</strong>
-          </a>
-          <a class="button is-light">
+          </Link>
+          <Link className="button is-light">
             Connectez vous
-          </a>
+          </Link>
         </div>
       </div>
     </div>
